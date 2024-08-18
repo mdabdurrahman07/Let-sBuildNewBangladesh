@@ -1,7 +1,6 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { provider } from "@/util/provider";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Let'sBuildNewBangladesh - Home ",
@@ -11,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body><provider>{children}</provider></body>
     </html>
   );
 }
